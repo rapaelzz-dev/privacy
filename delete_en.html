@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Account and Data Deletion - Isekai Mercenary</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1d1d1f; --muted:#5f6368; --line:#e3e3e3; --accent:#2b5fd9; --box:rgba(43,95,217,.07); }
+  @media (prefers-color-scheme: dark) { :root { --bg:#121212; --fg:#eaeaea; --muted:#a0a0a0; --line:#2c2c2c; --accent:#8ab4f8; --box:rgba(138,180,248,.10); } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:1.6rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:32px 0 8px; padding-top:16px; border-top:1px solid var(--line); }
+  .meta, .lang { color:var(--muted); font-size:.9rem; }
+  a { color:var(--accent); }
+  table { width:100%; border-collapse:collapse; font-size:.92rem; margin:8px 0; }
+  th, td { border:1px solid var(--line); padding:8px; text-align:left; vertical-align:top; }
+  th { background:rgba(127,127,127,.08); }
+  .scroll { overflow-x:auto; }
+  .box { background:var(--box); border-radius:8px; padding:12px 16px; margin:12px 0; }
+  .btn { display:inline-block; background:var(--accent); color:var(--bg); text-decoration:none; padding:10px 18px; border-radius:6px; font-weight:600; }
+</style>
+</head>
+<body>
+<main>
+<p class="lang"><a href="delete.html">한국어</a> | English</p>
+<h1>Account and Data Deletion</h1>
+<p class="meta">App: Isekai Mercenary (Google Play package com.su.IsekaiMercenary)<br>Developer: NARU Studio<br>Effective date: 2026-11-17</p>
+
+<p>This page explains how to delete your Isekai Mercenary game account and its data. You can delete it right away inside the game, or, if you cannot use the app, request deletion by email.</p>
+
+<h2>1. Delete inside the game (immediate)</h2>
+<ol>
+<li>Open the game and tap the <b>gear (Settings)</b> button on the right side of the lobby screen.</li>
+<li>Under <b>Account</b>, find the <b>Delete Account</b> row and tap <b>Delete</b>.</li>
+<li>Read the notice and tap <b>Next</b>, then tap <b>Delete</b> again on the "Are you sure?" confirmation.</li>
+<li>When it finishes, you will see "Your account has been deleted." and return to the title screen.</li>
+</ol>
+<p>Your server data is deleted as soon as you confirm the second time. This cannot be undone.</p>
+
+<h2>2. Request deletion on the web (email)</h2>
+<p>You can request deletion by email even if you have uninstalled the app or cannot open it.</p>
+<ol>
+<li>If you can, find your player ID in the <b>UID</b> row of the game's <b>Settings</b> screen (tap <b>Copy</b> to copy it).</li>
+<li>Email us with the subject "Account deletion request" and include:
+  <ul>
+  <li>Your UID (player ID). If you don't know it, leave it out and give as much of the information below as you can.</li>
+  <li>Sign-in method (Guest / Google / Apple)</li>
+  <li>Your in-game nickname and the approximate date you last played</li>
+  <li>The email address we should reply to (only if different from the sender)</li>
+  </ul>
+</li>
+</ol>
+<div class="box">
+<p style="margin:0 0 10px">Email: <a href="mailto:rapaelzz@gmail.com">rapaelzz@gmail.com</a></p>
+<a class="btn" href="mailto:rapaelzz@gmail.com?subject=Account%20deletion%20request%20(Isekai%20Mercenary)&amp;body=UID%3A%20%0ASign-in%20method%20(Guest%2FGoogle%2FApple)%3A%20%0ANickname%3A%20%0ALast%20played%20(approx.)%3A%20%0A">Write a deletion request</a>
+</div>
+<p>After confirming that the request comes from the account's user, we delete the account <b>within 30 days of receiving the request</b> and email you the result. We may ask for more information if we cannot identify the account.</p>
+
+<h2>3. Data that is deleted</h2>
+<div class="scroll"><table>
+<tr><th>Data</th><th>Details</th><th>When</th></tr>
+<tr><td>Game account</td><td>Player ID (UID), linked Google/Apple account identifier and link, nickname</td><td>Immediately (within 30 days for web requests)</td></tr>
+<tr><td>Game save data</td><td>Progress, currencies, items, settings, mail, in-game benefits of purchases (such as ad removal)</td><td>Immediately</td></tr>
+<tr><td>Leaderboard records</td><td>Stage, dungeon and combat power scores and nickname</td><td>Immediately</td></tr>
+<tr><td>Data on your device</td><td>Progress data and backups of that account stored on the device</td><td>Deleted with in-game deletion; also removed when you uninstall the app</td></tr>
+</table></div>
+
+<h2>4. Data that is kept, and for how long</h2>
+<div class="scroll"><table>
+<tr><th>Data</th><th>Why it is kept</th><th>Retention</th></tr>
+<tr><td>In-app purchase records (product ID, transaction/order ID, purchase time, amount)</td><td>Legal record-keeping of payments and supply of goods under the Korean Act on Consumer Protection in Electronic Commerce, and handling of refunds and payment inquiries</td><td>Deleted 5 years after the purchase date</td></tr>
+<tr><td>Usage statistics (Unity Analytics event logs)</td><td>Statistics used to improve the game. After deletion they are no longer linked to any remaining account data.</td><td>Deleted under Unity Analytics' retention policy. For web requests we also request their deletion.</td></tr>
+</table></div>
+<p>Payment card details are handled by Google Play; we never receive or store them. Your Google account itself is not deleted; only its link to the game is removed.</p>
+
+<h2>5. Please note</h2>
+<ul>
+<li>Deleted accounts, game data, and purchased in-game currency or benefits cannot be restored or refunded.</li>
+<li>Uninstalling the app does not delete your account data on our servers. Please use one of the methods above.</li>
+<li>If you sign in again with the same Google/Apple account after deletion, you will start over with a new account.</li>
+</ul>
+
+<h2>6. Contact</h2>
+<p>Developer: NARU Studio<br>
+Privacy officer: Seonung Kim<br>
+Email: <a href="mailto:rapaelzz@gmail.com">rapaelzz@gmail.com</a><br>
+<a href="en.html">Privacy Policy</a> · <a href="terms_en.html">Terms of Service</a></p>
+</main>
+</body>
+</html>
