@@ -25,7 +25,7 @@
 <main>
 <p class="lang"><a href="delete.html">한국어</a> | English</p>
 <h1>Account and Data Deletion</h1>
-<p class="meta">App: Isekai Mercenary (Google Play package com.su.IsekaiMercenary)<br>Developer: NARU Studio<br>Effective date: 2026-11-17</p>
+<p class="meta">App: Isekai Mercenary (Google Play package com.su.IsekaiMercenary)<br>Developer: NARU Studio<br>Effective date: 2026-11-18</p>
 
 <p>This page explains how to delete your Isekai Mercenary game account and its data. You can delete it right away inside the game, or, if you cannot use the app, request deletion by email.</p>
 
@@ -70,13 +70,16 @@
 <div class="scroll"><table>
 <tr><th>Data</th><th>Why it is kept</th><th>Retention</th></tr>
 <tr><td>In-app purchase records (product ID, transaction/order ID, purchase time, amount)</td><td>Legal record-keeping of payments and supply of goods under the Korean Act on Consumer Protection in Electronic Commerce, and handling of refunds and payment inquiries</td><td>Deleted 5 years after the purchase date</td></tr>
-<tr><td>Usage statistics (Unity Analytics event logs)</td><td>Statistics used to improve the game. After deletion they are no longer linked to any remaining account data.</td><td>Deleted under Unity Analytics' retention policy. For web requests we also request their deletion.</td></tr>
+<tr><td>Account deletion record (UID, deletion time, result)</td><td>Confirming deletion and answering related inquiries</td><td>Deleted 1 year after deletion</td></tr>
+<tr><td>Fraud detection records (UID, detection date and rule)</td><td>Preventing cheating and payment fraud, handling appeals</td><td>Deleted 1 year after detection</td></tr>
+<tr><td>Usage statistics (Unity Analytics and Firebase Analytics event logs)</td><td>Statistics used to improve the game. After deletion they are no longer linked to any remaining account data.</td><td>Firebase: deleted 14 months after collection. Unity: under Unity's retention policy. For web requests we also request their deletion.</td></tr>
+<tr><td>Crash reports (Firebase Crashlytics)</td><td>Fixing bugs</td><td>Deleted 90 days after collection</td></tr>
 </table></div>
 <p>Payment card details are handled by Google Play; we never receive or store them. Your Google account itself is not deleted; only its link to the game is removed.</p>
 
 <h2>5. Please note</h2>
 <ul>
-<li>Deleted accounts, game data, and purchased in-game currency or benefits cannot be restored or refunded.</li>
+<li>Deleted accounts, game data, and purchased in-game currency or benefits cannot be restored or refunded. If you have paid items still eligible for a refund, request the refund before deleting.</li>
 <li>Uninstalling the app does not delete your account data on our servers. Please use one of the methods above.</li>
 <li>If you sign in again with the same Google/Apple account after deletion, you will start over with a new account.</li>
 </ul>

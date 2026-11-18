@@ -23,7 +23,7 @@
 <main>
 <p class="lang"><a href="index.html">한국어</a> | English</p>
 <h1>Privacy Policy</h1>
-<p class="meta">Isekai Mercenary · Developer: NARU Studio<br>Effective date: 2026-10-21</p>
+<p class="meta">Isekai Mercenary · Developer: NARU Studio<br>Effective date: 2026-11-18 (previous: 2026-10-21)</p>
 
 <p>NARU Studio ("we", "us") develops the mobile game Isekai Mercenary (the "Game"). This policy explains what data the Game collects, how we use it, who we share it with, and how you can request deletion.</p>
 
@@ -35,7 +35,7 @@
 <tr><td>Game data</td><td>Progress, currencies, items, settings and other save data; nickname</td><td>During play and cloud save</td></tr>
 <tr><td>Leaderboard data</td><td>Nickname and stage, dungeon and combat power scores</td><td>When you use the ranking screen</td></tr>
 <tr><td>Purchase data</td><td>Product ID, transaction (order) ID and store receipt. Payment card details are handled by Google Play / the App Store and are never received by us.</td><td>In-app purchases</td></tr>
-<tr><td>Device and usage data</td><td>Device model, OS version, language and region settings, app version, in-game event logs, error information, advertising ID (Android Advertising ID / IDFA, where permitted), IP address</td><td>While the Game runs, when ads are shown</td></tr>
+<tr><td>Device and usage data</td><td>Device model, OS version, language and region settings, app version, in-game event logs, error and crash information, advertising ID (Android Advertising ID / IDFA, where permitted), IP address</td><td>While the Game runs, when ads are shown</td></tr>
 </table></div>
 
 <h2>2. How we use data</h2>
@@ -53,42 +53,61 @@
 <div class="scroll"><table>
 <tr><th>Company</th><th>Service</th><th>Data processed</th><th>Policy</th></tr>
 <tr><td>Unity Technologies</td><td>Unity Gaming Services: Authentication, Cloud Save, Cloud Code (server logic and purchase verification), Leaderboards, Analytics</td><td>Player ID, linked account identifiers, game data, nickname and scores, purchase transaction data, device and usage data</td><td><a href="https://unity.com/legal/privacy-policy">Link</a></td></tr>
-<tr><td>Google LLC</td><td>Google Sign-In, Google Play Billing, Google AdMob (ads)</td><td>Google account identifier, purchase data, advertising ID, device data, IP address</td><td><a href="https://policies.google.com/privacy">Link</a> · <a href="https://policies.google.com/technologies/partner-sites">How Google uses data</a></td></tr>
+<tr><td>Google LLC</td><td>Google Sign-In, Google Play Billing, Google AdMob (ads), Firebase Analytics (usage statistics), Firebase Crashlytics (crash reporting)</td><td>Google account identifier, purchase data, advertising ID, player ID and in-game event logs, crash information, device data, IP address</td><td><a href="https://policies.google.com/privacy">Link</a> · <a href="https://policies.google.com/technologies/partner-sites">How Google uses data</a></td></tr>
 <tr><td>Apple Inc.</td><td>Sign in with Apple, App Store payments (iOS)</td><td>Apple account identifier, purchase data</td><td><a href="https://www.apple.com/legal/privacy/">Link</a></td></tr>
 </table></div>
-<p>These services may process data on servers outside your country, including the United States. We do not disclose your data to other parties except where required by law.</p>
+<p><b>International transfers.</b> These services process data on servers outside your country, including the United States. The recipients, data and purposes are listed in the table above; data is sent over encrypted connections (HTTPS) as you use the Game and kept for the periods in section 5. You may refuse these transfers, but without these services we cannot provide sign-in, saving or purchases, so the Game cannot be used. Optional processing such as ad personalization can be refused as described in section 4.</p>
+<p>We do not disclose your data to other parties except where required by law.</p>
 
 <h2>4. Advertising and consent</h2>
 <p>The Game shows Google AdMob rewarded ads. In regions that require consent (such as the EEA and the UK), a consent form (Google UMP) is shown at launch, and personalized or non-personalized ads are served based on your choice. You can reset your advertising ID or opt out of personalized ads in your device settings (Android: Settings &gt; Google &gt; Ads; iOS: Settings &gt; Privacy &amp; Security &gt; Tracking).</p>
 
 <h2>5. Retention</h2>
-<p>We keep data while your game account exists and delete it promptly when you request account deletion. Purchase records that the law requires us to keep are retained for the legally required period and then deleted. Statistics may be kept in a form that cannot identify you.</p>
+<p>We keep data while your game account exists and destroy it without delay when the account is deleted, except for the data below, which is kept for the period shown and then destroyed.</p>
+<div class="scroll"><table>
+<tr><th>Data</th><th>Why we keep it</th><th>Period</th></tr>
+<tr><td>In-app purchase records (player ID, product ID, transaction/order ID, purchase time, amount, verification result)</td><td>Records of contracts, withdrawals, payments and supply of goods required by the Korean Act on Consumer Protection in Electronic Commerce; refunds and payment inquiries</td><td>5 years</td></tr>
+<tr><td>Records of payment complaints and disputes</td><td>Required by the same Act</td><td>3 years</td></tr>
+<tr><td>Account deletion records (player ID, deletion time, result)</td><td>Confirming deletion and answering related inquiries</td><td>1 year from deletion</td></tr>
+<tr><td>Fraud detection records (player ID, detection date and rule)</td><td>Preventing cheating and payment fraud, handling appeals</td><td>1 year from detection</td></tr>
+<tr><td>Firebase Analytics usage statistics</td><td>Usage analysis</td><td>14 months from collection</td></tr>
+<tr><td>Firebase Crashlytics crash reports</td><td>Fixing bugs</td><td>90 days from collection</td></tr>
+<tr><td>Unity Analytics usage statistics</td><td>Usage analysis</td><td>Under Unity's retention policy</td></tr>
+</table></div>
+<p>Statistics may be kept in a form that cannot identify you.</p>
 
-<h2 id="delete">6. Requesting account and data deletion</h2>
+<h2>6. How data is destroyed</h2>
+<p>When the retention period ends or the purpose is fulfilled, we destroy the data without delay. When you delete your account in the Game, your server game data, protected data and leaderboard entries are deleted immediately, followed by your Unity authentication account (player ID and Google/Apple link). For email requests we do the same within 30 days of verifying the request and also request deletion of your Firebase and Unity analytics data. Data kept under section 5 is stored separately and used only for the stated purpose. Electronic files are deleted so that they cannot be recovered; we do not keep data on paper.</p>
+
+<h2 id="delete">7. Requesting account and data deletion</h2>
 <p>You can request deletion of your game account and related data at any time. In the Game, you can delete it immediately under <b>Settings &gt; Account &gt; Delete Account</b>. See the <a href="delete_en.html">Account and Data Deletion</a> page for full steps and what data is deleted or kept. If you cannot use the app, request deletion by email:</p>
 <ol>
 <li>Find your player ID in the UID row of the Game's settings screen.</li>
 <li>Email <a href="mailto:rapaelzz9897@gmail.com">rapaelzz9897@gmail.com</a> with the subject "Account deletion request", including your player ID and sign-in method (guest/Google/Apple).</li>
-<li>After verifying the request, we delete your account, save data, leaderboard entries and analytics data within 30 days and reply to confirm.</li>
+<li>After verifying the request, we delete your account, save data and leaderboard entries within 30 days, request deletion of your analytics data, and reply to confirm.</li>
 </ol>
-<p>You can send this request even if the Game is no longer installed. Deleted data and purchased in-game items cannot be restored. Uninstalling the Game alone does not delete data stored on our servers.</p>
+<p>You can send this request even if the Game is no longer installed. Deleted data and purchased in-game items cannot be restored, so if you have paid items that are still eligible for a refund, request the refund before deleting. Uninstalling the Game alone does not delete data stored on our servers. Data kept under section 5 remains for that period after deletion.</p>
 
-<h2>7. Your rights</h2>
+<h2>8. Your rights</h2>
 <p>Depending on where you live, you may have the right to access, correct, delete or restrict processing of your personal data, or to object to it. Contact us at the address below and we will respond without undue delay.</p>
 
-<h2>8. Children</h2>
+<h2>9. Children</h2>
 <p>The Game is not directed at children under 13 (or the minimum age in your country), and we do not knowingly collect their personal data. If you believe a child has provided data, contact us and we will delete it.</p>
 
-<h2>9. Security</h2>
+<h2>10. Security</h2>
 <p>Data is sent over encrypted connections (HTTPS). Server data is protected by Unity Gaming Services access controls so that only the authenticated player can access it. Secret keys used for purchase verification are kept only in a server-side secret store.</p>
 
-<h2>10. Contact</h2>
+<h2>11. Contact</h2>
 <p>Developer: NARU Studio<br>
 Privacy contact: Seonung Kim<br>
 Email: <a href="mailto:rapaelzz9897@gmail.com">rapaelzz9897@gmail.com</a></p>
 
-<h2>11. Changes</h2>
+<h2>12. Complaints</h2>
+<p>Users in Korea may also contact the Personal Information Dispute Mediation Committee (1833-6972, <a href="https://www.kopico.go.kr">www.kopico.go.kr</a>) or the KISA Privacy Infringement Report Center (118, <a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a>). Users elsewhere may contact their local data protection authority.</p>
+
+<h2>13. Changes</h2>
 <p>If we change this policy, we will post the update on this page and revise the effective date. We will also announce significant changes in the Game.</p>
+<p>History: 2026-10-21 first version · 2026-11-18 added in-game account deletion, data kept after deletion and periods, destruction procedure, Firebase analytics and crash reporting, international transfers, complaints</p>
 </main>
 </body>
 </html>
